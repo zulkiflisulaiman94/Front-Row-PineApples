@@ -34,10 +34,10 @@ SG_INC="-I${APP_PATH}/lib/"
 
 if [ "$OS" = "$WIN" ]; then
     export PATH=$APP_PATH/lib:/c/Program\ Files\ \(x86\)/Mono/bin/:/c/Program\ Files/Mono/bin/:$PATH:/c/Windows/Microsoft.NET/Framework/v4.0.30319
-    GMCS_FLAGS="-target:exe -r:.\lib\SwinGame.dll,.\packages\NUnit.2.6.4\lib\nunit.framework.dll"
+    GMCS_FLAGS="-target:exe -r:.\lib\SwinGame.dll,.\packages\NUnit.3.2.1\lib\net40\nunit.framework.dll"
     GMCS_FLAGS="$GMCS_FLAGS -platform:x86"
 else
-    GMCS_FLAGS="-target:exe -r:./lib/SwinGame.dll,./packages/NUnit.2.6.4/lib/nunit.framework.dll"
+    GMCS_FLAGS="-target:exe -r:./lib/SwinGame.dll,./packages/NUnit.3.2.1/lib/net40/nunit.framework.dll"
 fi
 
 #Locate the compiler...

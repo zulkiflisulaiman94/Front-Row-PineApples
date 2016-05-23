@@ -15,3 +15,9 @@ C:\Users\Boudag\Desktop\PineappleCoffee\bin\Debug\MyGame.exe
 C:\Users\Boudag\Desktop\PineappleCoffee\bin\Debug\nunit.framework.dll
 C:\Users\Boudag\Desktop\PineappleCoffee\bin\Debug\SwinGame.dll
 C:\Users\Boudag\Desktop\PineappleCoffee\bin\Debug\nunit.framework.xml
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\bin\Debug\MyGame.exe
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\bin\Debug\nunit.framework.dll
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\bin\Debug\SwinGame.dll
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\bin\Debug\nunit.framework.xml
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Windows\MyGame.exe

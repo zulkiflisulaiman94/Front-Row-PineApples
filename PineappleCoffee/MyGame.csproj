@@ -61,10 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\main.cs" />
-    <Compile Include="ChrisTests.cs" />
-    <Compile Include="GameBoard.cs" />
-    <Compile Include="Coffee.cs" />
-    <Compile Include="Latte.cs" />
+    <Compile Include="src\ChrisTests.cs" />
+    <Compile Include="src\GameBoard.cs" />
+    <Compile Include="src\Coffee.cs" />
+    <Compile Include="src\Latte.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
