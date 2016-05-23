@@ -1,0 +1,41 @@
+//This is a example of the coding conventions to be used in this project.
+///observe indentation, naming conventions.
+
+/// <summary>
+/// This is a class for the carrier.
+/// The carrier is the child class of Ship.
+/// </summary>
+public class Carier : Ship
+	{
+	  //field for carrier image
+	  private image _image;
+	  
+		/// <summary>
+		/// Constructor for carrier.
+		/// Takes in a x and y for positioning.
+		/// Send data to parent.
+		/// initialize image.
+		/// </summary>
+		public Carrier () : base(aX, aY)
+		{
+		  //initialize carrier image
+		  _image = loadImage(carrier.jpg);
+		}
+
+		/// <summary>
+		/// This is a method.
+		/// Takes in an integer.
+		/// Returns an integer.
+		/// </summary>
+		public override int Method (aInteger)
+		{
+		  //Local variable prepared to hold and return calculation.
+		  int j = 0;
+			//this loop cycles based on the provided integer.
+			for (int i = 0; i < aInteger; i++)
+			   {
+			      j = j + 10;
+			   }
+			 return j;
+		}
+	}
