@@ -10,5 +10,4 @@ script:
  # - grep "Test Results" build.log
   
 notifications:
-	email:
-		- 5353688@student.swin.edu.au
+	slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
