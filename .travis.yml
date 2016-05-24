@@ -7,9 +7,8 @@ before_script:
 script:    
   - PineappleCoffee/./build.sh
  # - ./test.sh
-  # - grep "Test Results" build.log
+ # - grep "Test Results" build.log
   
 notifications:
- slack:
-	on_success: always
-	on_failure: always
+	email:
+		- 5353688@student.swin.edu.au
