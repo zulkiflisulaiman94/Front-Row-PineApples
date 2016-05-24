@@ -9,7 +9,7 @@ script:
  # - ./test.sh
   # - grep "Test Results" build.log
   
- notifications:
-	slack:
-		on_success: always
-		on_failure: always
+notifications:
+ slack:
+	on_success: always
+	on_failure: always
