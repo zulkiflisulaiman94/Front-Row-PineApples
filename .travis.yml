@@ -8,6 +8,7 @@ script:
   - PineappleCoffee/./build.sh
  
 notifications:
- slack: SwinDP1:nfYAWqWg9Cdnjk9leL2WhaQY#front-row-allstars
+ slack: SwinDP1:nfYAWqWg9Cdnjk9leL2WhaQY
     on_success:always
     on_failure:always
+ 
