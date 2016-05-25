@@ -10,4 +10,4 @@ script:
 notifications:
  slack: SwinDP1:nfYAWqWg9Cdnjk9leL2WhaQY#front-row-allstars
     on_success:always
-	on_failure:always
+    on_failure:always
