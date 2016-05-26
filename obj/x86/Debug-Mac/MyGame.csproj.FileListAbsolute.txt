@@ -1,1 +1,9 @@
 C:\Users\revam\Dropbox\UNI - SEMESTER 1 2016\SWE20001 - Development Project 1\ProjectTemplate\obj\x86\Debug-Mac\MyGame.csprojResolveAssemblyReference.cache
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Mac\MyGame.csprojResolveAssemblyReference.cache
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\bin\Debug\MyGame.exe
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\bin\Debug\MyGame.pdb
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\bin\Debug\nunit.framework.dll
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\bin\Debug\SwinGame.dll
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\bin\Debug\nunit.framework.xml
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Mac\MyGame.exe
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Mac\MyGame.pdb

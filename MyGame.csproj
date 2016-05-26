@@ -63,7 +63,7 @@
     <Compile Include="src\GameBoard.cs" />
     <Compile Include="src\Coffee.cs" />
     <Compile Include="src\Latte.cs" />
-    <Compile Include="NUnitTestCoffeeChildrenClasses.cs" />
+    <Compile Include="src\MoniisTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
