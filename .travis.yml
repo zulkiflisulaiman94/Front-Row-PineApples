@@ -1,0 +1,12 @@
+language: csharp
+solution: PineappleCoffee/MyGame.sln
+
+before_script:
+  - chmod +x PineappleCoffee/build.sh
+ 
+script:    
+  - PineappleCoffee/./build.sh
+ 
+notifications:
+  slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
+ 
