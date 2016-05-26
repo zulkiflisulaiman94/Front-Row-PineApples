@@ -9,9 +9,8 @@ install:
   - nuget restore PineappleCoffee/MyGame.sln
   
 script:    
-  - PineappleCoffee/./build.sh
   - xbuild PineappleCoffee/MyGame.sln
-  - nunit-console PineappleCoffee/bin/Debug/MyGameUnitTests.dll
+  - nunit-console PineappleCoffee/bin/Debug/ogg.dll
  
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
