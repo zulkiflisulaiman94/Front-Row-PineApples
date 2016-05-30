@@ -3,17 +3,17 @@ using SwinGameSDK;
 
 namespace MyGame
 {
-	public class Latte : Coffee
+	public class BlackCoffee : Coffee
 	{
-		public Latte (int t) : base(t)
+		public BlackCoffee (int t) : base (t)
 		{
-			cImg = SwinGame.LoadBitmapNamed("latte", "latte.png");
+			cImg = SwinGame.LoadBitmapNamed("extrashot", "extrashot.png");
 		}
-			
+
 		public override void Draw()
 		{
-			Point2D ptt = SwinGame.PointAt (posX, posY);
-			SwinGame.DrawBitmap(cImg, ptt);	
+			Point2D pt = SwinGame.PointAt(posX, posY);
+			SwinGame.DrawBitmap(cImg, pt);	
 		}
 
 		public override bool IsAt (Point2D pt)
@@ -22,4 +22,5 @@ namespace MyGame
 		}
 	}
 }
+
 

@@ -14,11 +14,12 @@ namespace MyGame
 		private int _value;
 
 
-		public Coffee(int t, float pX, float pY)
+		public Coffee(int t)
 		{
+			Random rnd = new Random();
 			_ttl = t;
-			_x = pX;
-			_y = pY;
+			_x = rnd.Next(690);
+			_y = rnd.Next(10, 450);
 		}
 
 
@@ -28,7 +29,7 @@ namespace MyGame
 		public float posX
 		{
 			get { return _x; }
-			set { _x = value; }
+			set { _x = value;}
 		}
 
 		public float posY

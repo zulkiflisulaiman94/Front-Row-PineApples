@@ -20,5 +20,5 @@ namespace MyGame
 			Assert.IsTrue(l.IsAt(p));
 		}
 	}
-}
+} 	
 

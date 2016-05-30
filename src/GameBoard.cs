@@ -18,8 +18,6 @@ namespace MyGame
 		//draw images or background image?
 		public void DrawImages()
 		{
-			
-
 			foreach (Coffee cf in _Coffee)
 			{
 			cf.Draw();
@@ -70,9 +68,12 @@ namespace MyGame
 
 		public void AddImage(int i)
 		{
-			Latte cf = new Latte (i); 
-
-			_Coffee.Add (cf);
+			Latte la = new Latte(i); 
+			Capp cf = new Capp(i);
+			BlackCoffee bl = new BlackCoffee(i);
+			_Coffee.Add(cf);
+			_Coffee.Add(la);
+			_Coffee.Add(bl);
 		}
 
 		public int CoffeeCount

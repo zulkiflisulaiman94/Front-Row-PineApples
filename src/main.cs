@@ -8,8 +8,8 @@ namespace MyGame
         public static void Main()
         {
             //Open the game window
-            SwinGame.OpenGraphicsWindow("GameMain", 800, 600);
-            SwinGame.ShowSwinGameSplashScreen();
+			SwinGame.OpenGraphicsWindow("GameMain", 800, 600);
+			//SwinGame.ShowSwinGameSplashScreen();
 
 			GameBoard b = new GameBoard ();
 			Timer t = SwinGame.CreateTimer();
@@ -25,12 +25,10 @@ namespace MyGame
             
             //Run the game loop
             while(false == SwinGame.WindowCloseRequested())
-            {
-                //Fetch the next batch of UI interaction
-                SwinGame.ProcessEvents();
-                
-                //Clear the screen and draw the framerate
-                SwinGame.ClearScreen(Color.White);
+			{
+
+				//Clear the screen and draw the framerate
+				SwinGame.ClearScreen(Color.White);
 
 				if (timeLeft > 0)
 				{
@@ -95,11 +93,15 @@ namespace MyGame
 					{
 						Text.DrawText ("One free regular Coffee", Color.Black, 300, 250);
 					}
-
+						
 				}
-				Latte l = new Latte (50);
-				l.Draw ();
-                SwinGame.RefreshScreen(60);
+				//Latte l = new Latte (50);
+				//l.Draw ();
+
+				SwinGame.RefreshScreen(60);
+
+				//Fetch the next batch of UI interaction
+				SwinGame.ProcessEvents();
             }
         }
     }
