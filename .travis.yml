@@ -10,7 +10,6 @@ install:
   
 script:    
   - PineappleCoffee/./build.sh
-  - xbuild /p:Configuration=Debug MyGame.sln
   - nunit-console TestCoffee/bin/Debug/TestCoffee.dll
  
 notifications:
