@@ -3,16 +3,16 @@ solution: PineappleCoffee/MyGame.sln
 
 before_script:
   - chmod +x PineappleCoffee/build.sh
+  - nuget restore PineappleCoffee/MyGame.sln
  
 install:
   - sudo apt-get install nunit-console
-  - nuget restore PineappleCoffee/MyGame.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
-  
+
 script:    
   - PineappleCoffee/./build.sh
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./TestCoffee/obj/Debug/TestCoffee.dll
- 
+  - xbuild /p:Configuration=Debug MyGame.sln
+  - nunit-console TestCoffee/bin/Debug/TestCoffee.dll
+  
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
  
