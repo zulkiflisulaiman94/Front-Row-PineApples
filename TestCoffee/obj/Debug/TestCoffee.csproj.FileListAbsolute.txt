@@ -1,0 +1,5 @@
+C:\DProject\Front-Row-Pineapples\TestCoffee\bin\Debug\TestCoffee.dll
+C:\DProject\Front-Row-Pineapples\TestCoffee\bin\Debug\TestCoffee.pdb
+C:\DProject\Front-Row-Pineapples\TestCoffee\obj\Debug\TestCoffee.csprojResolveAssemblyReference.cache
+C:\DProject\Front-Row-Pineapples\TestCoffee\obj\Debug\TestCoffee.dll
+C:\DProject\Front-Row-Pineapples\TestCoffee\obj\Debug\TestCoffee.pdb
