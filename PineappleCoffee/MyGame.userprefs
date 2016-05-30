@@ -2,11 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="src\main.cs">
     <Files>
-      <File FileName="src\main.cs" Line="18" Column="21" />
-      <File FileName="Prize.cs" Line="7" Column="2" />
-      <File FileName="src\Prizes.cs" Line="2" Column="19" />
-      <File FileName="src\Latte.cs" Line="1" Column="1" />
-      <File FileName="src\GameBoard.cs" Line="1" Column="1" />
+      <File FileName="src\main.cs" Line="68" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

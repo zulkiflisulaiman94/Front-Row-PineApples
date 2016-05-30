@@ -23,6 +23,11 @@ namespace MyGame
 
 			t.Start ();
             
+			Bitmap img;
+			Bitmap img2;
+			img = SwinGame.LoadBitmapNamed("ribbon", "ribbon.jpg");
+			img2 = SwinGame.LoadBitmapNamed("bg", "bg.gif");
+
             //Run the game loop
             while(false == SwinGame.WindowCloseRequested())
             {
@@ -31,7 +36,15 @@ namespace MyGame
                 
                 //Clear the screen and draw the framerate
                 SwinGame.ClearScreen(Color.White);
-
+				Point2D pointbg = new Point2D();
+				pointbg.X = 0;
+				pointbg.Y = 0;
+				SwinGame.DrawBitmapOnScreen(img2, pointbg);
+				Point2D pointR = new Point2D();
+				pointR.X = 0;
+				pointR.Y = 0;
+				SwinGame.DrawBitmapOnScreen(img, pointR);
+		
 				if (timeLeft > 0)
 				{
 					currentTime = checked((int)SwinGame.TimerTicks (t));
@@ -43,10 +56,10 @@ namespace MyGame
 					}
 
 					string timeLeftDisply = "Time Remaining: " + timeLeft;
-					Text.DrawText (timeLeftDisply, Color.Black, 50, 30);
+					Text.DrawText (timeLeftDisply, Color.White, 50, 30);
 
 					scoreDisplay = "Score: " + currentTime / 100;
-					Text.DrawText (scoreDisplay, Color.Black, 600, 30);
+					Text.DrawText (scoreDisplay, Color.White, 600, 30);
 
 					b.DrawImages ();
 
