@@ -10,7 +10,7 @@ install:
   
 script:    
   - PineappleCoffee/./build.sh
-  - nunit-console TestCoffee/bin/Debug/TestCoffee.dll
+  - nunit-console TestCoffee\bin\Debug\TestCoffee.dll
  
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
