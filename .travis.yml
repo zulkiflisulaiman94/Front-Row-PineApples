@@ -11,7 +11,7 @@ install:
   
 script:    
   - PineappleCoffee/./build.sh
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./TestCoffee/bin/Debug/TestCoffee.dll
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./MyPoject.Tests/bin/Release/MyProject.Tests.dll
  
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
