@@ -11,7 +11,7 @@ install:
 script:    
   - PineappleCoffee/./build.sh
   - xbuild /p:Configuration=Debug MyGame.sln
-  - nunit-console PineappleCoffee/bin/Debug/nunit.framework.dll
+  - nunit-console TestCoffee/bin/Debug/TestCoffee.dll
  
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
