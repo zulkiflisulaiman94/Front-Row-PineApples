@@ -15,7 +15,7 @@ namespace MyGame
 			Timer t = SwinGame.CreateTimer();
 
 			//int coffeeAmount = 1;
-			int timeLeft = 120;
+			int timeLeft = 60;
 			int timerGameTimeConversion = 0;
 
 			string scoreDisplay = " ";
@@ -82,23 +82,13 @@ namespace MyGame
 				scoreDisplay = "Score: " + currentTime / 100;
 				Text.DrawText (scoreDisplay, Color.Black, 300, 200);
 
-					if ((int)currentTime < 500000)
-					{
-						Text.DrawText ("Better luck next time!", Color.Black, 300, 250);
-					}
-					else if ((int)currentTime < 1000000)
-					{
-						Text.DrawText ("Buy one regular Coffee", Color.Black, 300, 250);
-						Text.DrawText ("Get one free", Color.Black, 320, 300);
-					}
-					else if ((int)currentTime < 1500000)
-					{
-						Text.DrawText ("One free regular Coffee", Color.Black, 300, 250);
-					}
+					Prizes p = new Prizes ((int)currentTime);
+					p.returnPrize ();
+
 
 				}
-				Latte l = new Latte (50);
-				l.Draw ();
+				//Latte l = new Latte (50);
+				//l.Draw ();
                 SwinGame.RefreshScreen(60);
             }
         }

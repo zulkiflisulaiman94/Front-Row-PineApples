@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug-Windows</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{871B5A90-103A-46A5-BBB9-07C02B9851D1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MyGame</RootNamespace>
@@ -65,6 +63,7 @@
     <Compile Include="src\GameBoard.cs" />
     <Compile Include="src\Coffee.cs" />
     <Compile Include="src\Latte.cs" />
+    <Compile Include="src\Prizes.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
