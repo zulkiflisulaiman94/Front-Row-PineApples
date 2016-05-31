@@ -1,10 +1,9 @@
 language: csharp
 solution: PineappleCoffee/MyGame.sln
 
-before_install:
-  - sudo apt-get install nunit-console
 install:
   - nuget restore PineappleCoffee/MyGame.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 
 script:    
   - xbuild /p:Configuration=Release PineappleCoffee/MyGame.sln
