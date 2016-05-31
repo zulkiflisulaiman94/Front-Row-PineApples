@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug-Windows</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{871B5A90-103A-46A5-BBB9-07C02B9851D1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MyGame</RootNamespace>
@@ -160,11 +158,5 @@
     <None Include="Resources\sounds\watershot.wav" />
     <None Include="Resources\sounds\winner.wav" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TestCoffee\TestCoffee.csproj">
-      <Project>{afc536dc-ae11-494f-8f03-31ea65cad02f}</Project>
-      <Name>TestCoffee</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>
