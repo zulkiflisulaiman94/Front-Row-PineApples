@@ -6,7 +6,7 @@ install:
 
 script:
   - xbuild /p:Configuration=Release PineappleCoffee/MyGame.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./PineappleCoffee/UnitTestProject1/bin/Debug/UnitTestProject1.dll
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./PineappleCoffee/MyGameTests/bin/Debug/MyGameTests.dll
 
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
