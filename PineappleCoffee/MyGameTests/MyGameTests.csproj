@@ -40,6 +40,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\NUnit 2.6.4\bin\framework\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="SwinGame, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\pac\Front-Row-Pineapples\PineappleCoffee\lib\SwinGame.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -56,7 +60,12 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Coffee.cs" />
+    <Compile Include="src\GameBoard.cs" />
     <Compile Include="src\GameMainTests.cs" />
+    <Compile Include="src\Latte.cs" />
+    <Compile Include="src\main.cs" />
+    <Compile Include="src\Prizes.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyGame.csproj">
