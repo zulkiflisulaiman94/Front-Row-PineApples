@@ -1,17 +1,13 @@
 language: csharp
 solution: PineappleCoffee/MyGame.sln
 
-before_script:
-  - chmod +x PineappleCoffee/build.sh
-  - nuget restore PineappleCoffee/MyGame.sln
- 
 install:
   - sudo apt-get install nunit-console
+  - nuget restore PineappleCoffee/MyGame.sln
 
 script:    
-  - PineappleCoffee/./build.sh
-  - xbuild /p:Configuration=Debug MyGame.sln
-  - nunit-console TestCoffee/bin/Debug/TestCoffee.dll
+  - xbuild /p:Configuration=Release ./PineappleCoffee/MyGame.sln
+  - nunit-console ./PineappleCoffee.Tests/bin/Release/PineappleCoffee.Tests.dll
   
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
