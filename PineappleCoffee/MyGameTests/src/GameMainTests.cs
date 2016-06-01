@@ -19,14 +19,7 @@ namespace MyGame.Tests
             Assert.AreEqual(1, i);
         }
 
-        [Test()]
-        public void TestTTL1()
-        {
-            GameBoard b = new GameBoard();
-            b.AddImage(1);
-
-            Assert.AreEqual(1, b.CoffeeCount);
-        }
+       
 
 
     }
