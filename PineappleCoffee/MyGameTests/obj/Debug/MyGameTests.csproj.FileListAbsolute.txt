@@ -8,3 +8,10 @@ C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\obj\Debug\MyGameTests.csprojResolveAssemblyReference.cache
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\obj\Debug\MyGameTests.dll
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\obj\Debug\MyGameTests.pdb
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\MyGameTests.dll
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\MyGameTests.pdb
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\MyGame.exe
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\nunit.framework.xml
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\MyGameTests\obj\Debug\MyGameTests.csprojResolveAssemblyReference.cache
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\MyGameTests\obj\Debug\MyGameTests.dll
+C:\DProject\Front-Row-Pineapples\PineappleCoffee\MyGameTests\obj\Debug\MyGameTests.pdb
