@@ -65,7 +65,8 @@
     <Compile Include="src\Coffee.cs" />
     <Compile Include="src\Latte.cs" />
     <Compile Include="src\Capp.cs" />
-    <Compile Include="src\BlackCoffee.cs" />
+    <Compile Include="src\ExtraShot.cs" />
+    <Compile Include="src\SpiltCof.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">

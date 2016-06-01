@@ -18,8 +18,12 @@ namespace MyGame
 		{
 			Random rnd = new Random();
 			_ttl = t;
+			_x = posX;
+			_y = posY;
+			/*
 			_x = rnd.Next(690);
 			_y = rnd.Next(10, 450);
+			*/
 		}
 
 

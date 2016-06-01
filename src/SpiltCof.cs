@@ -3,18 +3,18 @@ using SwinGameSDK;
 
 namespace MyGame
 {
-	public class Capp : Coffee
+	public class SpiltCof : Coffee
 	{
-		public Capp (int t) : base(t)
+		public SpiltCof (int t) : base (t)
 		{
-			cImg = SwinGame.LoadBitmapNamed("cappuccino", "cappuccino.png");
+			cImg = SwinGame.LoadBitmapNamed("spilt", "spilt.jpg");
 		}
 
 		public override void Draw()
 		{
 			Random rnd = new Random();
 			posX = rnd.Next(400); 
-			posY = rnd.NextDouble();
+			posY = rnd.Next(2, 450);
 
 			Point2D pt = SwinGame.PointAt(posX, posY);
 			SwinGame.DrawBitmap(cImg, pt);
@@ -22,7 +22,7 @@ namespace MyGame
 
 		public override bool IsAt (Point2D pt)
 		{
-			return SwinGame.PointInRect(pt, posX, posY, (posX + 20), (posY + 20));
+			return SwinGame.PointInRect (pt ,posX, posY, (posX + 20), (posY + 20));
 		}
 	}
 }

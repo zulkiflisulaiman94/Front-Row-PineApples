@@ -22,6 +22,7 @@ namespace MyGame
 			{
 			cf.Draw();
 			}
+			SwinGame.Delay(1000);
 		}
 
 		//heavy lifting
@@ -68,12 +69,15 @@ namespace MyGame
 
 		public void AddImage(int i)
 		{
+
 			Latte la = new Latte(i); 
 			Capp cf = new Capp(i);
-			BlackCoffee bl = new BlackCoffee(i);
+			ExtraShot bl = new ExtraShot(i);
+			SpiltCof sc = new SpiltCof(i);
 			_Coffee.Add(cf);
 			_Coffee.Add(la);
 			_Coffee.Add(bl);
+			_Coffee.Add(sc);
 		}
 
 		public int CoffeeCount
