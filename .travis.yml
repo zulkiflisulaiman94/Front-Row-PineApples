@@ -2,6 +2,7 @@ language: csharp
 solution: PineappleCoffee/MyGame.sln
 install:
   - nuget restore PineappleCoffee/MyGame.sln
+  - nuget restore PineappleCoffee/MyGameTests/MyGameTests.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 
 script:
