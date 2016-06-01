@@ -65,8 +65,9 @@ namespace MyGame
 		public void AddImage(int i)
 		{
 			Latte cf = new Latte (i); 
-
+			SpiltCof sc = new SpiltCof(i);
 			_Coffee.Add (cf);
+			_Coffee.Add (sc);
 		}
 
 		public int CoffeeCount
