@@ -9,14 +9,14 @@ namespace MyGame
 
 		public Latte (int t) : base(t,  350,  350)
 		{
-			_Cimg = SwinGame.LoadBitmapNamed("latte", "latte.png");
+			//_Cimg = SwinGame.LoadBitmapNamed("latte", "latte.png");
 		}
 
 		public override void Draw()
 		{
 			Point2D p = default (Point2D);
 			p = SwinGame.PointAt (posX, posY);
-			SwinGame.DrawBitmapOnScreen(_Cimg, p);	
+			//SwinGame.DrawBitmapOnScreen(_Cimg, p);	
 		}
 
 		public override bool IsAt(Point2D pt)

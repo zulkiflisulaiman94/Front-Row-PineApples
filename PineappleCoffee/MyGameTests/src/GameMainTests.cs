@@ -29,7 +29,7 @@ namespace MyGame.Tests
             
             //Assert.AreEqual(1, b.CoffeeCount);
             Latte _newLt = new Latte(1);
-
+            _newLt.Draw();
             Assert.AreEqual(_newLt, null);
         }
 
