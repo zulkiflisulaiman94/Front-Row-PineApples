@@ -62,6 +62,7 @@
     <Compile Include="src\Coffee.cs" />
     <Compile Include="src\Latte.cs" />
     <Compile Include="src\Prizes.cs" />
+    <Compile Include="src\ScoreControler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">

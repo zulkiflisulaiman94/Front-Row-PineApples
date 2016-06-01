@@ -13,9 +13,10 @@ namespace MyGame
 
 			GameBoard b = new GameBoard ();
 			Timer t = SwinGame.CreateTimer();
+            ScoreControler s = new ScoreControler();
 
-			//int coffeeAmount = 1;
-			int timeLeft = 60;
+            //int coffeeAmount = 1;
+            int timeLeft = 60;
 			int timerGameTimeConversion = 0;
 
 			string scoreDisplay = " ";
@@ -58,12 +59,12 @@ namespace MyGame
 					string timeLeftDisply = "Time Remaining: " + timeLeft;
 					Text.DrawText (timeLeftDisply, Color.White, 50, 30);
 
-					scoreDisplay = "Score: " + currentTime / 100;
+					scoreDisplay = "Score: " + s.FetchScore();
 					Text.DrawText (scoreDisplay, Color.White, 600, 30);
 
 					b.DrawImages ();
 
-					int timeAjustment = 0;
+				
 
 					if (SwinGame.MouseClicked (MouseButton.LeftButton))
 					{
@@ -72,8 +73,10 @@ namespace MyGame
 
 						Point2D p = SwinGame.PointAt (x, y);
 
-						timeAjustment = (timeAjustment + b.HandleInput (p));
-						b.DestroyImages ();
+						
+					    b.HandleInput(p);
+
+                        b.DestroyImages ();
 					}
 
 					int coffeeAmount = b.CoffeeCount;
