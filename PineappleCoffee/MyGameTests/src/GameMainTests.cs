@@ -23,14 +23,11 @@ namespace MyGame.Tests
         [Test()]
         public void TestTTL1()
         {
-            //GameBoard b = new GameBoard();
-           // b.AddImage(1);
+            GameBoard b = new GameBoard();
+             b.AddImage(1);
             //asdfasd
             
-            //Assert.AreEqual(1, b.CoffeeCount);
-            Latte _newLt = new Latte(1);
-            _newLt.Draw();
-            Assert.AreEqual(_newLt, null);
+            Assert.AreEqual(1, b.CoffeeCount);
         }
 
 
