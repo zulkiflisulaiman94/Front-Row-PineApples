@@ -60,13 +60,231 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\ChrisTests.cs" />
+    <Compile Include="src\Coffee.cs" />
+    <Compile Include="src\GameBoard.cs" />
     <Compile Include="src\GameMainTests.cs" />
+    <Compile Include="src\Latte.cs" />
+    <Compile Include="src\main.cs" />
+    <Compile Include="src\Prizes.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyGame.csproj">
-      <Project>{871B5A90-103A-46A5-BBB9-07C02B9851D1}</Project>
-      <Name>MyGame</Name>
-    </ProjectReference>
+    <MacLibraryFiles Include="lib\sdl13\libSGSDK.dylib" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\jpeg.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\libfreetype-6.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\libogg-0.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\libpng12-0.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\libpng13.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\libtiff-3.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\libvorbis-0.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\libvorbisfile-3.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\mikmod.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\ogg.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\SDL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\SDL_gfx.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\SDL_image.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\SDL_mixer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\SDL_net.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\SDL_ttf.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\SGSDK.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\smpeg.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\swingame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <WinLibraryFiles Include="lib\win\zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\.DS_Store" />
+    <None Include="Resources\animations\.DS_Store" />
+    <None Include="Resources\fonts\arial.ttf" />
+    <None Include="Resources\fonts\cour.ttf" />
+    <None Include="Resources\fonts\ffaccess.ttf" />
+    <None Include="Resources\fonts\maven_pro_regular.ttf" />
+    <None Include="Resources\images\.DS_Store" />
+    <None Include="Resources\sounds\SwinGameStart.ogg" />
+    <None Include="Resources\SwinGame.icns" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animations\splash.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animations\startup.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bundles\FileDialog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bundles\splash.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\highscores.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\deploy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\deploy_button_hl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\deploy_dir_button_horiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\deploy_dir_button_vert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\deploy_play_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\deploy_randomize_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\discover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\explosion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\fdFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\fdFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\FileDialog_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\FileDialog_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\FileDialog_Inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\FileDialog_Scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\FileDialog_ScrollSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\loader_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\loader_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\main_page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_horiz_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_horiz_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_horiz_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_horiz_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_horiz_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_vert_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_vert_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_vert_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_vert_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\ship_deploy_vert_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\SplashBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\Swinburne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\SwinGameAni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images\SwinGameAni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panels\FileDialog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\horrordrone.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\lose.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\sink.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\SwinGameStart.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\watershot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sounds\winner.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwinGame.ico" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

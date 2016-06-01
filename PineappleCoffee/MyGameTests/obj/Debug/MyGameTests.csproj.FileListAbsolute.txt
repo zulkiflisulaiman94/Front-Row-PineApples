@@ -1,7 +1,6 @@
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\MyGameTests.dll
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\MyGameTests.pdb
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\MyGame.exe
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\nunit.framework.dll
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\SwinGame.dll
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\MyGameTests\bin\Debug\nunit.framework.xml
