@@ -28,7 +28,6 @@ namespace MyGame.Tests
             //asdfasd
             
             //Assert.AreEqual(1, b.CoffeeCount);
-            //asdfasdf
             Latte _newLt = new Latte(1);
             _newLt.Draw();
             Assert.AreEqual(_newLt, null);
