@@ -24,7 +24,7 @@ namespace MyGame.Tests
         {
             GameBoard b = new GameBoard();
             b.AddImage(1);
-
+            //asdf
             Assert.AreEqual(1, b.CoffeeCount);
         }
 
