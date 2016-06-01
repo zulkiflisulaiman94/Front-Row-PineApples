@@ -92,6 +92,10 @@
     <WinLibraryFiles Include="lib\win\swingame.rc" />
     <WinLibraryFiles Include="lib\win\zlib1.dll" />
   </ItemGroup>
+  <Target Name="CopyFiles">
+    <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />
+    <Copy SourceFiles="@(WinLibraryFiles)" DestinationFolder="$(OutDir)" />
+  </Target>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
