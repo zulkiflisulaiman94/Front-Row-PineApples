@@ -5,16 +5,17 @@ namespace MyGame
 {
 	public class Latte : Coffee
 	{
+        private Bitmap _Cimg; 
 		public Latte (int t) : base(t,  350,  350)
 		{
-			cImg = SwinGame.LoadBitmapNamed("latte", "latte.png");
+			_Cimg = SwinGame.LoadBitmapNamed("latte", "latte.png");
 		}
 
 		public override void Draw()
 		{
 			Point2D p = default (Point2D);
 			p = SwinGame.PointAt (posX, posY);
-			SwinGame.DrawBitmapOnScreen(cImg, p);	
+			SwinGame.DrawBitmapOnScreen(_Cimg, p);	
 		}
 		public override bool IsAt(Point2D pt)
 		{

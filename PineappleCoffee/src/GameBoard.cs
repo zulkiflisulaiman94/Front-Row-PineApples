@@ -70,8 +70,7 @@ namespace MyGame
 
 		public void AddImage(int i)
 		{
-			Latte cf = new Latte (i); 
-
+			Latte cf = new Latte(i);
 			_Coffee.Add (cf);
 		}
 
