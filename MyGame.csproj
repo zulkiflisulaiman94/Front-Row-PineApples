@@ -67,6 +67,7 @@
     <Compile Include="src\Capp.cs" />
     <Compile Include="src\ExtraShot.cs" />
     <Compile Include="src\SpiltCof.cs" />
+    <Compile Include="src\GameSounds.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">

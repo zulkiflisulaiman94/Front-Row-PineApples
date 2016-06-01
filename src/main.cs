@@ -10,14 +10,12 @@ namespace MyGame
             //Open the game window
 			SwinGame.OpenGraphicsWindow("GameMain", 800, 600);
 			//SwinGame.ShowSwinGameSplashScreen();
-
+			GameSounds.LoadSounds();
 			GameBoard b = new GameBoard ();
 			Timer t = SwinGame.CreateTimer();
-
 			//int coffeeAmount = 1;
 			int timeLeft = 120;
 			int timerGameTimeConversion = 0;
-
 			string scoreDisplay = " ";
 			int currentTime = 0;
 
@@ -52,6 +50,7 @@ namespace MyGame
 
 					if (SwinGame.MouseClicked (MouseButton.LeftButton))
 					{
+						Audio.PlaySoundEffect (GameSounds._TheGameSound("Click_On"));
 						float x = SwinGame.MouseX ();
 						float y = SwinGame.MouseY ();
 
@@ -59,6 +58,7 @@ namespace MyGame
 
 						timeAjustment = (timeAjustment + b.HandleInput (p));
 						b.DestroyImages ();
+
 					}
 
 					int coffeeAmount = b.CoffeeCount;
@@ -79,21 +79,23 @@ namespace MyGame
 
 				scoreDisplay = "Score: " + currentTime / 100;
 				Text.DrawText (scoreDisplay, Color.Black, 300, 200);
-
+				
 					if ((int)currentTime < 500000)
 					{
 						Text.DrawText ("Better luck next time!", Color.Black, 300, 250);
+						Audio.PlaySoundEffect (GameSounds._TheGameSound("Lose"));
 					}
 					else if ((int)currentTime < 1000000)
 					{
 						Text.DrawText ("Buy one regular Coffee", Color.Black, 300, 250);
 						Text.DrawText ("Get one free", Color.Black, 320, 300);
+						Audio.PlaySoundEffect (GameSounds._TheGameSound("Kids_Cheering"));
 					}
 					else if ((int)currentTime < 1500000)
 					{
 						Text.DrawText ("One free regular Coffee", Color.Black, 300, 250);
-					}
-						
+						Audio.PlaySoundEffect (GameSounds._TheGameSound("Kids_Cheering"));
+					}	
 				}
 				//Latte l = new Latte (50);
 				//l.Draw ();
@@ -102,7 +104,10 @@ namespace MyGame
 
 				//Fetch the next batch of UI interaction
 				SwinGame.ProcessEvents();
+
             }
+			GameSounds.FreeSounds();
         }
+
     }
 }
