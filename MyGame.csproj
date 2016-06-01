@@ -68,6 +68,7 @@
     <Compile Include="src\ExtraShot.cs" />
     <Compile Include="src\SpiltCof.cs" />
     <Compile Include="src\GameSounds.cs" />
+    <Compile Include="src\ZulTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">

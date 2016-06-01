@@ -27,7 +27,6 @@ namespace MyGame
 
 				//Clear the screen and draw the framerate
 				SwinGame.ClearScreen(Color.White);
-
 				if (timeLeft > 0)
 				{
 					currentTime = checked((int)SwinGame.TimerTicks (t));

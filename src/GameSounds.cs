@@ -10,8 +10,7 @@ namespace MyGame
 	public static class GameSounds
 	{
 		private static Dictionary<string, SoundEffect> _Sounds = new Dictionary<string, SoundEffect>();
-
-
+	
 		public static void LoadSounds()
 		{
 			NewSound("Click_On", "Click_On.wav");
@@ -24,7 +23,10 @@ namespace MyGame
 
 		public static SoundEffect _TheGameSound(string sound)
 		{
-			return _Sounds[sound];
+			if(_Sounds.Count != 0)
+				return _Sounds[sound];
+
+			return null;
 		}
 
 		private static void NewSound(string soundName, string filename)
