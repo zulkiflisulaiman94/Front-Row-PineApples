@@ -11,8 +11,6 @@ namespace MyGame
 		
 		}
 
-
-
 		public override void Draw()
 		{
 			Point2D p = default (Point2D);
