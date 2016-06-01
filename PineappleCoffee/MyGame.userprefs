@@ -2,19 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="src\main.cs">
     <Files>
-      <File FileName="src\main.cs" Line="71" Column="30" />
-      <File FileName="ChrisTests.cs" Line="45" Column="18" />
-      <File FileName="GameBoard.cs" Line="17" Column="3" />
-      <File FileName="Coffee.cs" Line="27" Column="19" />
-      <File FileName="Latte.cs" Line="19" Column="38" />
+      <File FileName="src\main.cs" Line="68" Column="6" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="MyGame" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

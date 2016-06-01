@@ -1,12 +1,13 @@
 language: csharp
 solution: PineappleCoffee/MyGame.sln
+install:
+  - nuget restore PineappleCoffee/MyGame.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 
-before_script:
-  - chmod +x PineappleCoffee/build.sh
- 
-script:    
-  - PineappleCoffee/./build.sh
- 
+script:
+  - xbuild /p:Configuration=Debug PineappleCoffee/MyGame.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./PineappleCoffee/MyGameTests/bin/Debug/MyGameTests.dll
+
 notifications:
   slack: swindp1:nfYAWqWg9Cdnjk9leL2WhaQY
  

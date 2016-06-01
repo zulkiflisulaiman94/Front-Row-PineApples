@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using NUnit.Framework;
 using SwinGameSDK;
 
@@ -22,8 +22,8 @@ namespace MyGame
 			GameBoard b = new GameBoard ();
 			b.AddImage(1);
 
-			b.CheckTTL(1);
-
+			b.CheckTTL(5);
+			b.DestroyImages ();
 			Assert.AreEqual(0, b.CoffeeCount);
 		}
 
@@ -34,8 +34,8 @@ namespace MyGame
 			b.AddImage(1);
 			b.AddImage(2);
 
-			b.CheckTTL(1);
-
+			b.CheckTTL(2);
+			b.DestroyImages ();
 			Assert.AreEqual(1, b.CoffeeCount);
 		}
 
@@ -46,10 +46,9 @@ namespace MyGame
 			b.AddImage(1);
 			b.AddImage(2);
 
-			b.CheckTTL(2);
-
+			b.CheckTTL(3);
+			b.DestroyImages ();
 			Assert.AreEqual(0, b.CoffeeCount);
 		}
 	}
 }
-
