@@ -7,3 +7,5 @@ C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineap
 C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\bin\Debug\nunit.framework.xml
 C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Mac\MyGame.exe
 C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Mac\MyGame.pdb
+C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\obj\x86\Debug-Mac\MyGame.exe
+C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\obj\x86\Debug-Mac\MyGame.pdb

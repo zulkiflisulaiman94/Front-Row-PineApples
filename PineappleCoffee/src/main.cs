@@ -28,7 +28,7 @@ namespace MyGame
 			Bitmap img2;
 			img = SwinGame.LoadBitmapNamed("ribbon", "ribbon.jpg");
 			img2 = SwinGame.LoadBitmapNamed("bg", "bg.gif");
-
+            int tl = 0;
             //Run the game loop
             while(false == SwinGame.WindowCloseRequested())
             {
@@ -47,7 +47,7 @@ namespace MyGame
 				SwinGame.DrawBitmapOnScreen(img, pointR);
 		
 				if (timeLeft > 0)
-				{
+                {
 					currentTime = checked((int)SwinGame.TimerTicks (t));
 
 					if (currentTime > timerGameTimeConversion)
@@ -58,37 +58,39 @@ namespace MyGame
 
 					string timeLeftDisply = "Time Remaining: " + timeLeft;
 					Text.DrawText (timeLeftDisply, Color.White, 50, 30);
-
+                    
 					scoreDisplay = "Score: " + s.FetchScore();
 					Text.DrawText (scoreDisplay, Color.White, 600, 30);
+                    
+                                        b.DrawImages ();
+                        
 
-					b.DrawImages ();
 
-				
-
-					if (SwinGame.MouseClicked (MouseButton.LeftButton))
+                    if (SwinGame.MouseDown(MouseButton.LeftButton))
 					{
+                      
 						float x = SwinGame.MouseX ();
 						float y = SwinGame.MouseY ();
 
 						Point2D p = SwinGame.PointAt (x, y);
 
-						
-					    b.HandleInput(p);
+					    int scoreAd = 0;
+					  scoreAd = scoreAd + b.HandleInput(p);
+                        s.add(scoreAd);
 
                         b.DestroyImages();
+                        b.Empty();
 					}
 
-					int coffeeAmount = b.CoffeeCount;
-				
 
-					b.CheckTTL(currentTime / 10);
+				    
+					b.CheckTTL(timeLeft);
 
-					while (coffeeAmount < 4)
+					while (b.CoffeeCount < 3)
 					{
 						
-						b.AddImage((currentTime / 1000));
-						coffeeAmount = b.CoffeeCount;
+						b.AddImage(timeLeft - 3);
+					
 					}
 
 			}

@@ -22,7 +22,7 @@ namespace MyGame
 			{
 			cf.Draw();
 			}
-			SwinGame.Delay(1000);
+			
 		}
 
 		//heavy lifting
@@ -35,7 +35,7 @@ namespace MyGame
 			foreach (Coffee cf in _Coffee)
 			{
 				
-			if (cf.IsAt (pt) == true)
+			if (cf.IsAt(pt))
 				{
 					v = v + cf.Value;
 					AddDest (cf);
@@ -96,13 +96,22 @@ namespace MyGame
 				return _Coffee.Count;
 			}
 		}
+        public int DCoffeeCount
+        {
+            get
+            {
+                return _DCoffee.Count;
+            }
+        }
 
-		public void CheckTTL(int i)
+        public void CheckTTL(int i)
 		{
 			foreach (Coffee cf in _Coffee)
 			{
-				if (cf.TTL < i)
-					AddDest (cf);
+			    if (cf.TTL >= i)
+			    {
+			        AddDest(cf);
+			    }
 			}
 		}
 	}

@@ -5,7 +5,7 @@ namespace MyGame
 {
 	public class SpiltCof : Coffee
 	{
-		public SpiltCof (int t) : base (t,  350,  350)
+		public SpiltCof (int t) : base (t,  350,  350, -5)
 		{
 			cImg = SwinGame.LoadBitmapNamed("spilt", "spilt.jpg");
 		}
@@ -16,10 +16,13 @@ namespace MyGame
 			SwinGame.DrawBitmap(cImg, pt);
 		}
 
-		public override bool IsAt (Point2D pt)
-		{
-			return SwinGame.PointInRect (pt ,posX, posY, (posX + 20), (posY + 20));
-		}
-	}
+        public override bool IsAt(Point2D pt)
+        {
+            if (pt.InRect(posX, posY, (posX + 100), (posY + 100)))
+                return true;
+            else
+                return false;
+        }
+    }
 }
 
