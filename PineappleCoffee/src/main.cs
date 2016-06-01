@@ -76,18 +76,18 @@ namespace MyGame
 						
 					    b.HandleInput(p);
 
-                        b.DestroyImages ();
+                        b.DestroyImages();
 					}
 
 					int coffeeAmount = b.CoffeeCount;
 				
 
-					b.CheckTTL(currentTime / 10000);
+					b.CheckTTL(currentTime / 10);
 
-					while (coffeeAmount < 3)
+					while (coffeeAmount < 4)
 					{
 						
-						b.AddImage((currentTime / 10000));
+						b.AddImage((currentTime / 1000));
 						coffeeAmount = b.CoffeeCount;
 					}
 
@@ -95,10 +95,10 @@ namespace MyGame
 				else{
 				t.Pause ();
 
-				scoreDisplay = "Score: " + currentTime / 100;
-				Text.DrawText (scoreDisplay, Color.Black, 300, 200);
+				scoreDisplay = "Score: " + s.FetchScore();
+                    Text.DrawText (scoreDisplay, Color.Black, 300, 200);
 
-					Prizes p = new Prizes ((int)currentTime);
+					Prizes p = new Prizes (s.FetchScore());
 					p.returnPrize ();
 
 
