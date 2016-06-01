@@ -5,7 +5,7 @@ namespace MyGame
 {
 	public class SpiltCof : Coffee
 	{
-		public SpiltCof (int t) : base (t)
+		public SpiltCof (int t) : base (t,  350,  350)
 		{
 			cImg = SwinGame.LoadBitmapNamed("spilt", "spilt.jpg");
 		}

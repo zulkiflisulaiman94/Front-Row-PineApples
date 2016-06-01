@@ -11,13 +11,10 @@ namespace MyGame
 		
 		}
 
-
-
 		public override void Draw()
 		{
-			Point2D p = default (Point2D);
-			p = SwinGame.PointAt (posX, posY);
-			SwinGame.DrawBitmapOnScreen(cImg, p);	
+			Point2D ptt = SwinGame.PointAt (posX, posY);
+			SwinGame.DrawBitmap(cImg, ptt);		
 		}
 		public override bool IsAt(Point2D pt)
 		{
