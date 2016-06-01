@@ -31,21 +31,16 @@ namespace MyGame
 			//checks if there's an object at the mouse position mouse position
 			//if true/false, remove image, plays music, add scores
 			int v = 0;
-			/*
+
 			foreach (Coffee cf in _Coffee)
 			{
-				
-			if (cf.IsAt (pt) == true)
-			{
+				if (cf.IsAt(pt) == true)
+				{
 					v = v + cf.Value;
-					AddDest (cf);
-
+					AddDest(cf);
 				}
-			
 			}
-*/
 			return v;
-
 
 		}
 
@@ -53,7 +48,7 @@ namespace MyGame
 		{
 			foreach(Coffee cf in _DCoffee)
 			{
-				_Coffee.Remove (cf);
+				_Coffee.Remove(cf);
 			}
 		}
 
@@ -64,7 +59,7 @@ namespace MyGame
 
 		public void AddDest(Coffee cf)
 		{
-			_DCoffee.Add (cf);
+			_DCoffee.Add(cf);
 		}
 
 		public void AddImage(int i)

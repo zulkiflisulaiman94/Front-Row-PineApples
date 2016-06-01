@@ -16,9 +16,10 @@ namespace MyGame
 
 		public Coffee(int t, float pX, float pY)
 		{
+			Random rnd = new Random();
 			_ttl = t;
-			_x = pX;
-			_y = pY;
+			_x = rnd.Next(690);
+			_y = rnd.Next(50, 450);
 		}
 
 

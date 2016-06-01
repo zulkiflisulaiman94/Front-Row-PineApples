@@ -27,3 +27,9 @@ C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\bin\Debug\Sw
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\bin\Debug\nunit.framework.xml
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
 C:\Users\Boudag\Desktop\tester\Front-Row-Pineapples\PineappleCoffee\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\PineappleCoffee\bin\Debug\MyGame.exe
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\PineappleCoffee\bin\Debug\nunit.framework.dll
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\PineappleCoffee\bin\Debug\SwinGame.dll
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\PineappleCoffee\bin\Debug\nunit.framework.xml
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\PineappleCoffee\obj\x86\Debug-Windows\MyGame.csprojResolveAssemblyReference.cache
+C:\Users\Home\Desktop\UNI\SEM3.16\SOFTWARE\Front-Row-Pineapples\Front-Row-Pineapples\PineappleCoffee\PineappleCoffee\obj\x86\Debug-Windows\MyGame.exe

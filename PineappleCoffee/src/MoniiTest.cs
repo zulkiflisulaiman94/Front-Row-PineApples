@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace MyGame
 {
 	[TestFixture ()]
-	public class MoniisTest
+	public class MoniiTest
 	{
 		[Test ()]
 		public void TestLatteDraws ()

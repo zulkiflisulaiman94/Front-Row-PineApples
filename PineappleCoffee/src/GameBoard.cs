@@ -18,12 +18,11 @@ namespace MyGame
 		//draw images or background image?
 		public void DrawImages()
 		{
-			
-
 			foreach (Coffee cf in _Coffee)
 			{
 			cf.Draw();
 			}
+			SwinGame.Delay(1000);
 		}
 
 		//heavy lifting
@@ -32,22 +31,17 @@ namespace MyGame
 			//checks if there's an object at the mouse position mouse position
 			//if true/false, remove image, plays music, add scores
 			int v = 0;
-			/*
+
 			foreach (Coffee cf in _Coffee)
 			{
 				
 			if (cf.IsAt (pt) == true)
-			{
+				{
 					v = v + cf.Value;
 					AddDest (cf);
-
 				}
-			
 			}
-*/
 			return v;
-
-
 		}
 
 		public void DestroyImages()
