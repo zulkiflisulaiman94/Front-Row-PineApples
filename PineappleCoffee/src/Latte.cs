@@ -8,7 +8,6 @@ namespace MyGame
 		public Latte (int t) : base(t,  350,  350)
 		{
 			cImg = SwinGame.LoadBitmapNamed("latte", "latte.png");
-		
 		}
 
 		public override void Draw()
