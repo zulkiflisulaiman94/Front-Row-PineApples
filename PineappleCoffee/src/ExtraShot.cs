@@ -5,7 +5,7 @@ namespace MyGame
 {
 	public class ExtraShot : Coffee
 	{
-		public ExtraShot (int t) : base (t,  350,  350)
+		public ExtraShot (int t) : base (t,  350,  350, 3)
 		{
 			cImg = SwinGame.LoadBitmapNamed("extrashot", "extrashot.png");
 		}
@@ -16,11 +16,14 @@ namespace MyGame
 			SwinGame.DrawBitmap(cImg, pt);	
 		}
 
-		public override bool IsAt (Point2D pt)
-		{
-			return SwinGame.PointInRect (pt ,posX, posY, (posX + 20), (posY + 20));
-		}
-	}
+        public override bool IsAt(Point2D pt)
+        {
+            if (pt.InRect(posX, posY, (posX + 100), (posY + 100)))
+                return true;
+            else
+                return false;
+        }
+    }
 }
 
 

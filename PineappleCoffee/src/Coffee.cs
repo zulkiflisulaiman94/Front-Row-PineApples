@@ -14,12 +14,13 @@ namespace MyGame
 		private int _value;
 
 
-		public Coffee(int t, float pX, float pY)
+		public Coffee(int t, float pX, float pY, int v)
 		{
 			Random rnd = new Random();
 			_ttl = t;
 			_x = rnd.Next(690);
 			_y = rnd.Next(50, 450);
+		    _value = v;
 		}
 
 

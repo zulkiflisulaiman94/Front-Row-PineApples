@@ -28,7 +28,7 @@ namespace MyGame
 			Bitmap img2;
 			img = SwinGame.LoadBitmapNamed("ribbon", "ribbon.jpg");
 			img2 = SwinGame.LoadBitmapNamed("bg", "bg.gif");
-
+            int tl = 0;
             //Run the game loop
             while(false == SwinGame.WindowCloseRequested())
             {
@@ -47,7 +47,7 @@ namespace MyGame
 				SwinGame.DrawBitmapOnScreen(img, pointR);
 		
 				if (timeLeft > 0)
-				{
+                {
 					currentTime = checked((int)SwinGame.TimerTicks (t));
 
 					if (currentTime > timerGameTimeConversion)
@@ -58,47 +58,49 @@ namespace MyGame
 
 					string timeLeftDisply = "Time Remaining: " + timeLeft;
 					Text.DrawText (timeLeftDisply, Color.White, 50, 30);
-
+                    
 					scoreDisplay = "Score: " + s.FetchScore();
 					Text.DrawText (scoreDisplay, Color.White, 600, 30);
+                    
+                                        b.DrawImages ();
+                        
 
-					b.DrawImages ();
 
-				
-
-					if (SwinGame.MouseClicked (MouseButton.LeftButton))
+                    if (SwinGame.MouseDown(MouseButton.LeftButton))
 					{
+                      
 						float x = SwinGame.MouseX ();
 						float y = SwinGame.MouseY ();
 
 						Point2D p = SwinGame.PointAt (x, y);
 
-						
-					    b.HandleInput(p);
+					    int scoreAd = 0;
+					  scoreAd = scoreAd + b.HandleInput(p);
+                        s.add(scoreAd);
 
-                        b.DestroyImages ();
+                        b.DestroyImages();
+                        b.Empty();
 					}
 
-					int coffeeAmount = b.CoffeeCount;
-				
 
-					b.CheckTTL(currentTime / 10000);
+				    
+					b.CheckTTL(timeLeft);
 
-					while (coffeeAmount < 3)
+					while (b.CoffeeCount < 3)
 					{
 						
-						b.AddImage((currentTime / 10000));
-						coffeeAmount = b.CoffeeCount;
+						b.AddImage(timeLeft - 3);
+					
 					}
 
 			}
 				else{
 				t.Pause ();
 
-				scoreDisplay = "Score: " + currentTime / 100;
-				Text.DrawText (scoreDisplay, Color.Black, 300, 200);
+				scoreDisplay = "Score: " + s.FetchScore();
+                    Text.DrawText (scoreDisplay, Color.Black, 300, 200);
 
-					Prizes p = new Prizes ((int)currentTime);
+					Prizes p = new Prizes (s.FetchScore());
 					p.returnPrize ();
 
 

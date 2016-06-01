@@ -12,8 +12,9 @@ namespace MyGame
 		{
 			GameBoard b = new GameBoard ();
 			b.AddImage(1);
+            
 
-			Assert.AreEqual(1, b.CoffeeCount);
+            Assert.AreEqual(1, b.CoffeeCount);
 		}
 
 		[Test()]
@@ -34,9 +35,9 @@ namespace MyGame
 			b.AddImage(1);
 			b.AddImage(2);
 
-			b.CheckTTL(2);
+			b.CheckTTL(3);
 			b.DestroyImages ();
-			Assert.AreEqual(1, b.CoffeeCount);
+			Assert.AreEqual(0, b.CoffeeCount);
 		}
 
 		[Test()]

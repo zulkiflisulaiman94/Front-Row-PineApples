@@ -5,7 +5,7 @@ namespace MyGame
 {
 	public class Capp : Coffee
 	{
-		public Capp (int t) : base(t,  350,  350)
+		public Capp (int t) : base(t,  350,  350, 1)
 		{
 			cImg = SwinGame.LoadBitmapNamed("cappuccino", "cappuccino.png");
 		}
@@ -18,7 +18,10 @@ namespace MyGame
 
 		public override bool IsAt (Point2D pt)
 		{
-			return SwinGame.PointInRect(pt, posX, posY, (posX + 20), (posY + 20));
+		    if (pt.InRect(posX, posY, (posX + 100), (posY + 100)))
+		        return true;
+		    else
+		        return false;
 		}
 	}
 }

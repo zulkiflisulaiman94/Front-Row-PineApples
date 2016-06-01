@@ -22,7 +22,7 @@ namespace MyGame
 			{
 			cf.Draw();
 			}
-			SwinGame.Delay(1000);
+			
 		}
 
 		//heavy lifting
@@ -35,7 +35,7 @@ namespace MyGame
 			foreach (Coffee cf in _Coffee)
 			{
 				
-			if (cf.IsAt (pt) == true)
+			if (cf.IsAt(pt))
 				{
 					v = v + cf.Value;
 					AddDest (cf);
@@ -64,11 +64,30 @@ namespace MyGame
 
 		public void AddImage(int i)
 		{
-			Latte cf = new Latte (i); 
-			SpiltCof sc = new SpiltCof(i);
-			_Coffee.Add (cf);
-			_Coffee.Add (sc);
-		}
+		    i++;
+            Random rnd = new Random();
+            int c = rnd.Next(1, 4);
+		    if (c == 1)
+		    {
+                Latte cf = new Latte(i);
+                _Coffee.Add(cf);
+            }
+            if (c == 2)
+            {
+                SpiltCof sc = new SpiltCof(i);
+                _Coffee.Add(sc);
+            }
+            if (c == 3)
+            {
+                ExtraShot es = new ExtraShot(i);
+                _Coffee.Add(es);
+            }
+            if (c == 4)
+            {
+                Capp ca = new Capp(i);
+                _Coffee.Add(ca);
+            }
+        }
 
 		public int CoffeeCount
 		{
@@ -77,13 +96,22 @@ namespace MyGame
 				return _Coffee.Count;
 			}
 		}
+        public int DCoffeeCount
+        {
+            get
+            {
+                return _DCoffee.Count;
+            }
+        }
 
-		public void CheckTTL(int i)
+        public void CheckTTL(int i)
 		{
 			foreach (Coffee cf in _Coffee)
 			{
-				if (cf.TTL > i)
-					AddDest (cf);
+			    if (cf.TTL >= i)
+			    {
+			        AddDest(cf);
+			    }
 			}
 		}
 	}
