@@ -12,10 +12,6 @@ namespace MyGame
 
 		public override void Draw()
 		{
-			Random rnd = new Random();
-			posX = rnd.Next(500); 
-			posY = rnd.Next(10, 450);
-
 			Point2D pt = SwinGame.PointAt(posX, posY);
 			SwinGame.DrawBitmap(cImg, pt);	
 		}
