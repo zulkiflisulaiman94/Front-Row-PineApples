@@ -48,7 +48,9 @@ namespace MyGame
 		{
 			foreach(Coffee cf in _DCoffee)
 			{
+
 				_Coffee.Remove (cf);
+
 			}
 		}
 

@@ -10,13 +10,13 @@ namespace MyGame
             //Open the game window
             SwinGame.OpenGraphicsWindow("GameMain", 800, 600);
             SwinGame.ShowSwinGameSplashScreen();
-
+			GameSounds.LoadSounds();
 			GameBoard b = new GameBoard ();
 			Timer t = SwinGame.CreateTimer();
             ScoreControler s = new ScoreControler();
 
             //int coffeeAmount = 1;
-            int timeLeft = 60;
+            int timeLeft = 5;
 			int timerGameTimeConversion = 0;
 
 			string scoreDisplay = " ";
@@ -30,6 +30,7 @@ namespace MyGame
 			img2 = SwinGame.LoadBitmapNamed("bg", "bg.gif");
             int tl = 0;
             //Run the game loop
+			Audio.PlaySoundEffect (GameSounds._TheGameSound("Ta_Da"));
             while(false == SwinGame.WindowCloseRequested())
             {
                 //Fetch the next batch of UI interaction
@@ -68,14 +69,14 @@ namespace MyGame
 
                     if (SwinGame.MouseDown(MouseButton.LeftButton))
 					{
-                      
+						Audio.PlaySoundEffect (GameSounds._TheGameSound("Button"));
 						float x = SwinGame.MouseX ();
 						float y = SwinGame.MouseY ();
 
 						Point2D p = SwinGame.PointAt (x, y);
 
 					    int scoreAd = 0;
-					  scoreAd = scoreAd + b.HandleInput(p);
+					 	scoreAd = scoreAd + b.HandleInput(p);
                         s.add(scoreAd);
 
                         b.DestroyImages();
@@ -95,20 +96,21 @@ namespace MyGame
 
 			}
 				else{
-				t.Pause ();
+					t.Pause ();
 
-				scoreDisplay = "Score: " + s.FetchScore();
+					scoreDisplay = "Score: " + s.FetchScore();
                     Text.DrawText (scoreDisplay, Color.Black, 300, 200);
 
 					Prizes p = new Prizes (s.FetchScore());
 					p.returnPrize ();
-
-
 				}
 				//Latte l = new Latte (50);
 				//l.Draw ();
                 SwinGame.RefreshScreen(60);
+
             }
+
+			GameSounds.FreeSounds();
         }
     }
 }

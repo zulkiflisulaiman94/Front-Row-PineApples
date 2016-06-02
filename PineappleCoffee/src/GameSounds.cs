@@ -11,20 +11,22 @@ namespace MyGame
 	{
 		private static Dictionary<string, SoundEffect> _Sounds = new Dictionary<string, SoundEffect>();
 
-
 		public static void LoadSounds()
 		{
 			NewSound("Click_On", "Click_On.wav");
 			NewSound("Button", "Button.wav");
 			NewSound("Ta_Da", "Ta_Da.wav");
-			NewSound("Kids_Cheering", "KidsCheering.wav");
+			NewSound("Kids_Cheering", "Kids_Cheering.wav");
 			NewSound("Computer_Error", "Computer_Error.wav");
 			NewSound("Lose", "lose.wav");
 		}
 
 		public static SoundEffect _TheGameSound(string sound)
 		{
-			return _Sounds[sound];
+			if(_Sounds.Count != 0)
+				return _Sounds[sound];
+
+			return null;
 		}
 
 		private static void NewSound(string soundName, string filename)
@@ -39,7 +41,7 @@ namespace MyGame
 				Audio.FreeSoundEffect (obj);
 			}
 		}
-			
+
 	}
 }
 
