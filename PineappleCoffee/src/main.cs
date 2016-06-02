@@ -16,7 +16,7 @@ namespace MyGame
             ScoreControler s = new ScoreControler();
 
             //int coffeeAmount = 1;
-            int timeLeft = 5;
+            int timeLeft = 60;
 			int timerGameTimeConversion = 0;
 
 			string scoreDisplay = " ";
