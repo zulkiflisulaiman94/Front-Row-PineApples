@@ -4,7 +4,7 @@ using SwinGameSDK;
 namespace MyGame
 {
     public class GameMain
-    {
+    
         public static void Main()
         {
             //Open the game window
